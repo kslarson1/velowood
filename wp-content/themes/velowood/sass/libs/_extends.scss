@@ -1,0 +1,29 @@
+
+// Clearfix
+%clearfix {
+ *zoom: 1;
+
+ &:after { clear: both; }
+
+ &:after,
+ &:before {
+  content: '';
+  display: table;
+ }
+}
+
+
+// Override Default webkit styles
+%no-webkit {
+	appearance: none;
+	outline: none;
+	border: none;
+	box-shadow: none;
+
+	&:focus, &:active {
+		appearance: none;
+		outline: none;
+		border: none;
+		box-shadow: none;
+	}
+}
