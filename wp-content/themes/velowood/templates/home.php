@@ -29,6 +29,9 @@ get_header(); ?>
 						</h3>
 						</div>
 					</div>
+					<div class="row">
+
+					</div>
 				</div>
 				<!-- END OF HERO SECTION -->
 
@@ -36,4 +39,4 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-<?php get_footer(); ?>
+
