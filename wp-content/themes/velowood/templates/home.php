@@ -30,7 +30,12 @@ get_header(); ?>
 						</div>
 					</div>
 					<div class="row">
-
+						<div class="home_nav">
+						<div class="column-full center">
+							<a href="/about.com" class="home_button">Products</a>
+							<a href="/about.com" class="home_button">Services</a>
+							<a href="/about.com" class="home_button">About</a>
+						</div>
 					</div>
 				</div>
 				<!-- END OF HERO SECTION -->
@@ -39,4 +44,3 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
