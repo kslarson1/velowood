@@ -32,10 +32,10 @@ get_header(); ?>
 					</div>
 				<!-- START OF EMPLOYEES -->
 				<div class="row">
-					<div class="column-full">
-					<h2><?php the_field('about_team_header'); ?></h2>
+					<div class="column-full center">
+					<h3><?php the_field('about_employees_header'); ?></h3>
 					</div>
-
+					
 					<!-- BEGIN REPEATER -->
 				<?php
 				// check if the repeater field has rows of data
