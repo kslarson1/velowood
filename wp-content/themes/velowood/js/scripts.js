@@ -22,6 +22,12 @@ $('.full-width h1').css({'margin-top': (vph / 1.75) * 0.2 + 'px'});
     $('.circle').css({'height': cirW + 'px'}); // Setting the Height of a class equal to the viewport height divided by 2
     // End of circle variable width
 
+// bike_maker variable width
+    cirW = $('.bike_maker').width();
+
+    $('.bike_maker').css({'height': cirW + 'px'}); // Setting the Height of a class equal to the viewport height divided by 2
+    // End of bike_maker variable width
+
 // Portfolio Thumbnails
 portW = $('.portfolio-thumb').width(); //Portfolio thumbnail width
 $('.portfolio-thumb').css({height: portW + 'px'}); // Setting the height of the thumbnail equal to the width (square)

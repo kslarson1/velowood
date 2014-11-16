@@ -60,10 +60,15 @@ get_header(); ?>
 				<!-- END OF REPEATER -->
 
 				</div>
-				<div class="row">
-
-				</div>
 				<!-- END OF EMPLOYEES -->
+				<!-- START OF CONTACT PAGE -->
+				<div id="contact">
+				<div class="center">
+					<h3><?php the_field('about_contact_header'); ?></h3>
+				</div>
+				<?php echo do_shortcode( '[contact-form-7 id="60" title="Contact Form"]' ); ?>
+				</div>
+				<!-- END OF CONTACT PAGE -->
 					<!-- END OF ABOUT PAGE -->
 
 			<?php endwhile; // end of the loop. ?>

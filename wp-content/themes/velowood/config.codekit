@@ -101,6 +101,61 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/images\/bigshot_logo.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 36402,
+		"inputAbbreviatedPath": "\/images\/bigshot_logo.jpg",
+		"outputAbbreviatedPath": "\/images\/bigshot_logo.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/biria_logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 22633,
+		"inputAbbreviatedPath": "\/images\/biria_logo.png",
+		"outputAbbreviatedPath": "\/images\/biria_logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/marin_logo.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4656,
+		"inputAbbreviatedPath": "\/images\/marin_logo.jpg",
+		"outputAbbreviatedPath": "\/images\/marin_logo.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/shop.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 113392,
+		"inputAbbreviatedPath": "\/images\/shop.jpg",
+		"outputAbbreviatedPath": "\/images\/shop.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/state_logo.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 44806,
+		"inputAbbreviatedPath": "\/images\/state_logo.jpg",
+		"outputAbbreviatedPath": "\/images\/state_logo.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/velowood-logo-wings.png": {
 		"fileType": 32768,
 		"ignore": 0,
