@@ -132,11 +132,6 @@ a img {
 /*--------------------------------------------------------------
 1.5 Custom (added)
 --------------------------------------------------------------*/
-.main-navigation {
-  float: right; }
-  .main-navigation .menu-toggle {
-    padding: 1em 1em; }
-
 .full-width {
   background-position: center center;
   background-repeat: no-repeat;
@@ -162,6 +157,30 @@ a img {
   border-radius: 50%;
   background-size: cover;
   background-position: center; }
+
+.ghost_button_semi {
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: #fff;
+  border: 1px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
+          transition: background-color 0.2s ease-out, border-color 0.2s ease-out; }
+
+.ghost_button_semi:hover,
+.ghost_button_semi:active {
+  color: #E53721;
+  background-color: #fff;
+  /* fallback */
+  background-color: rgba(255, 255, 255, 0.4);
+  border-color: #fff;
+  /* fallback */
+  border-color: rgba(255, 255, 255, 0.4);
+  -webkit-transition: background-color 0.3s ease-in, border-color 0.3s ease-in, color .5s ease-in;
+          transition: background-color 0.3s ease-in, border-color 0.3s ease-in, color .5s ease-in; }
 
 .home_button {
   font-size: 2em;
@@ -2130,10 +2149,9 @@ textarea {
 --------------------------------------------------------------*/
 a {
   color: royalblue; }
-  a:visited {
-    color: purple; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: midnightblue;
+    text-decoration: none; }
 
 /*--------------------------------------------------------------
 5.2 Menus
@@ -2141,34 +2159,31 @@ a {
 .main-navigation {
   clear: both;
   display: block;
-  float: left;
-  width: 100%; }
+  float: right;
+  width: 100%;
+  text-align: center;
+  background-color: black; }
   .main-navigation ul {
     list-style: none;
-    margin: 0;
+    margin: 1em 0;
     padding-left: 0; }
-    .main-navigation ul ul {
-      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
-      position: absolute;
-      top: 1.5em;
-      left: -999em;
-      z-index: 99999; }
-      .main-navigation ul ul ul {
-        left: -999em;
-        top: 0; }
-      .main-navigation ul ul li:hover > ul {
-        left: 100%; }
-      .main-navigation ul ul a {
-        width: 200px; }
-    .main-navigation ul li:hover > ul {
-      left: auto; }
   .main-navigation li {
-    float: left;
-    position: relative; }
-  .main-navigation a {
-    display: block;
-    text-decoration: none; }
+    margin: 0 .5em;
+    display: inline-block;
+    font-size: 1.25em;
+    width: 110px;
+    padding: 8px;
+    color: #fff;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    -webkit-transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
+            transition: background-color 0.2s ease-out, border-color 0.2s ease-out; }
+    .main-navigation li :hover, .main-navigation li active {
+      color: #66d8ed;
+      border-color: #66d8ed;
+      -webkit-transition: border-color 0.4s ease-in, color 0.4s ease-in;
+              transition: border-color 0.4s ease-in, color 0.4s ease-in; }
 
 /* Small menu */
 .menu-toggle {

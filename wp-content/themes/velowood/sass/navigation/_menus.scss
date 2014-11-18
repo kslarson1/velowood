@@ -1,65 +1,42 @@
 .main-navigation {
 	clear: both;
 	display: block;
-	float: left;
+	float: right;
 	width: 100%;
+	text-align: center;
+	background-color: black;  //remove this later
 
 	ul {
 		list-style: none;
-		margin: 0;
-		padding-left: 0;
-
-		ul {
-			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-			float: left;
-			position: absolute;
-			top: 1.5em;
-			left: -999em;
-			z-index: 99999;
-
-			ul {
-				left: -999em;
-				top: 0;
-			}
-
-			li {
-				&:hover > ul {
-					left: 100%;
-				}
-			}
-
-			a {
-				width: 200px;
-			}
-
-			:hover > a {
-			}
-
-			a:hover {
-			}
-		}
-
-		li:hover > ul {
-			left: auto;
-		}
+		margin: 1em 0;
+		padding-left: 0;	
 	}
+
 	li {
-		float: left;
-		position: relative;
-
-		&:hover > a {
+		margin: 0 .5em;
+		display: inline-block;
+		font-size: 1.25em;
+		width: 110px;
+		padding: 8px;
+		color: #fff;
+		text-align: center;
+		outline: none;
+		text-decoration: none;
+		transition: background-color 0.2s ease-out,
+			border-color 0.2s ease-out;
+		
+		:hover,active {
+			color: #66d8ed;
+			border-color: #66d8ed;
+			transition: border-color 0.4s ease-in,
+	        	color 0.4s ease-in;
 		}
 	}
-	a {
-		display: block;
-		text-decoration: none;
-	}
 
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a {
-	}
+	
 }
+
+
 
 /* Small menu */
 .menu-toggle {

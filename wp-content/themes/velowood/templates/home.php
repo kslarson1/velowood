@@ -33,9 +33,9 @@ get_header(); ?>
 					<div class="row">
 						<div class="home_nav">
 						<div class="col-xs-12 center">
-							<a href="/about.com" class="home_button">Products</a>
-							<a href="/about.com" class="home_button">Services</a>
-							<a href="/about.com" class="home_button">About</a>
+							<a href="/about.com" class="ghost_button_semi">Products</a>
+							<a href="/about.com" class="ghost_button_semi">Services</a>
+							<a href="/about.com" class="ghost_button_semi">About</a>
 						</div>
 					</div>
 				</div>
