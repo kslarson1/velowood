@@ -17,22 +17,24 @@ get_header(); ?>
 				<?php get_template_part( 'content', 'page' ); ?>
 
 				<!-- START ABOUT PAGE -->
+				<div class="container">
 				<div class="row">
-					<div class="column-one-half">
-						<div class="row center">
+					<div class="col-xs-12 col-sm-6">
+						<div class="center">
 						<h3><?php the_field('about_history_header'); ?></h3>
 						</div>
-						<div class="row">
+						<div class="col-xs-12">
 						<p><?php the_field('about_history_text'); ?></p>
 						</div>
 					</div>
-					<div class="column-one-half">
+					<div class="col-xs-12 col-sm-6">
 					<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script><div style="overflow:hidden;height:500px;width:500px;"><div id="gmap_canvas" style="height:500px;width:500px;"></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style><a class="google-map-code" href="http://www.trivoo.net" id="get-map-data">trivoo.net</a></div><script type="text/javascript"> function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(39.7398639,-104.95665359999998),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(39.7398639, -104.95665359999998)});infowindow = new google.maps.InfoWindow({content:"<b>Velowood Cyclery</b><br/>2526 E. Colfax<br/>Denver, CO 80206" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
 					</div>
 					</div>
+				</div>
 				<!-- START OF EMPLOYEES -->
-				<div class="row">
-					<div class="column-full center">
+				<div class="container">
+					<div class="col-xs-12 center">
 					<h3><?php the_field('about_employees_header'); ?></h3>
 					</div>
 					
@@ -43,14 +45,18 @@ get_header(); ?>
 				 	// loop through the rows of data
 				    while ( have_rows('about_employees') ) : the_row(); ?>
 				      <!--   // display a sub field value -->
-				      <div class="column-one-third">
-				      	<div class="circle" style="background-image: url(<?php the_sub_field('about_employee_image'); ?>)">
-				      	</div>
-				      	<div class="center">
-				        <h4><?php the_sub_field('about_employee_name'); ?></h4>
-				        </div>
-				        <?php the_sub_field('about_employee_background'); ?>
-				        </div>
+				     
+				      <div class="row">
+					      <div class="col-xs-12 col-md-4">
+					      	<div class="circle" style="background-image: url(<?php the_sub_field('about_employee_image'); ?>)">
+					      	</div>
+					      	<div class="center">
+					        <h4><?php the_sub_field('about_employee_name'); ?></h4>
+					        </div>
+					        <?php the_sub_field('about_employee_background'); ?>
+					        </div>
+				       </div>
+				      
 				       <?php 
 				    endwhile;
 				else :
@@ -62,11 +68,13 @@ get_header(); ?>
 				</div>
 				<!-- END OF EMPLOYEES -->
 				<!-- START OF CONTACT PAGE -->
-				<div id="contact">
-				<div class="center">
+				<div class="container" id="contact">
+				<div class="row">
+				<div class="col-xs-12 center">
 					<h3><?php the_field('about_contact_header'); ?></h3>
 				</div>
 				<?php echo do_shortcode( '[contact-form-7 id="60" title="Contact Form"]' ); ?>
+				</div>
 				</div>
 				<!-- END OF CONTACT PAGE -->
 					<!-- END OF ABOUT PAGE -->

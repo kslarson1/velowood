@@ -1,3 +1,14 @@
+#site-navigation {
+
+}
+
+.main-navigation {
+	float: right;
+	.menu-toggle {
+		padding: 1em 1em;
+	}
+}
+
 .full-width {
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -69,4 +80,10 @@
 	margin: 1em auto 1em auto;
 }
 
+.service_image {
+	display: block;
+	margin: 1em auto 1em auto;
+	max-width: 300px;
+	width: 100%;
+}
 

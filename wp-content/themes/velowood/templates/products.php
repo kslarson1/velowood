@@ -17,22 +17,23 @@ get_header(); ?>
 				<?php get_template_part( 'content', 'page' ); ?>
 
 				<!-- START BICYCLES PRODUCTS SECTION -->
-				<div class="row">
-					<div class="column-full center">
+			<div class="container">
+					<div class="col-xs-12 center">
 						<h1><?php the_field('products_bicycles_header'); ?></h1>
 					</div>
-				</div>
+				
 					<!-- START OF BIKE MAKERS -->
+				
 				<div class="row">
-					<div class="column-one-fourth">
+					<div class="col-xs-12 col-sm-3">
 					<div class="center">
 						<h3><?php the_field('products_bicycles_subheader_1'); ?></h3>
 					</div>
-					<img class="bike_maker" src="<?php the_field('products_bicycles_image_1'); ?>" style="text-align: center">
+					<img class="bike_maker" src="<?php the_field('products_bicycles_image_1'); ?>" >
 					<p><?php the_field('products_bicycles_text_1'); ?></p>
 					</div>
 
-					<div class="column-one-fourth">
+					<div class="col-xs-12 col-sm-3">
 					<div class="center">
 						<h3><?php the_field('products_bicycles_subheader_2'); ?></h3>
 					</div>
@@ -40,7 +41,7 @@ get_header(); ?>
 					<p><?php the_field('products_bicycles_text_2'); ?></p>
 					</div>
 
-					<div class="column-one-fourth">
+					<div class="col-xs-12 col-sm-3">
 					<div class="center">
 						<h3><?php the_field('products_bicycles_subheader_3'); ?></h3>
 					</div>
@@ -48,7 +49,7 @@ get_header(); ?>
 					<p><?php the_field('products_bicycles_text_3'); ?></p>
 					</div>
 
-					<div class="column-one-fourth">
+					<div class="col-xs-12 col-sm-3">
 					<div class="center">
 						<h3><?php the_field('products_bicycles_subheader_4'); ?></h3>
 					</div>
@@ -56,16 +57,18 @@ get_header(); ?>
 					<p><?php the_field('products_bicycles_text_4'); ?></p>
 					</div>
 				</div>
-				
+				</div>
+			<div class="container-fluid">
 				<div class="parts" style="background: url(<?php the_field('products_parts_background'); ?>)">
 				<div class="row">
-					<div class="column-one-third">
+					<div class="col-xs-12 col-sm-4 col-sm-offset-1">
 						<div class="clear_text">
-						<p><?php the_field('products_parts_text'); ?><p>
+						<p><?php the_field('products_parts_text'); ?></p>
 						</div>
 					</div>
 				</div>
 				</div>
+			</div>
 				<!-- END OF BIKE MAKERS -->
 				<!-- START OF ACCESORIES -->
 			<?php endwhile; // end of the loop. ?>

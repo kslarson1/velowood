@@ -18,25 +18,27 @@ get_header(); ?>
 
 				<!-- START OF HERO SECTION -->
 				<div class="full-width" style="background-image: url(<?php the_field('home_hero_image'); ?>);" >
-					<div class="row">
-						<div class="column-full center">
-							<img src="<?php the_field('home_logo'); ?>" />
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12 center">
+								<img src="<?php the_field('home_logo'); ?>" />
+							</div>
 						</div>
-					</div>
 					<div class="row">
-						<div class="column-full center">
+						<div class="col-xs-12 center">
 						<h3><?php the_field('home_main_text'); ?>
 						</h3>
 						</div>
 					</div>
 					<div class="row">
 						<div class="home_nav">
-						<div class="column-full center">
+						<div class="col-xs-12 center">
 							<a href="/about.com" class="home_button">Products</a>
 							<a href="/about.com" class="home_button">Services</a>
 							<a href="/about.com" class="home_button">About</a>
 						</div>
 					</div>
+				</div>
 				</div>
 				<!-- END OF HERO SECTION -->
 

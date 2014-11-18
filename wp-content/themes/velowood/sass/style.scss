@@ -26,7 +26,7 @@ and Blueprint http://www.blueprintcss.org/
 ----------------------------------------------------------------
 1.0 Reset
 1.5 Custom (added)
-1.7 Grids (added)
+1.7 Bootstrap (added)
 1.8 Libs (added)
 2.0 Typography
 3.0 Elements
@@ -61,9 +61,9 @@ and Blueprint http://www.blueprintcss.org/
 @import "custom/custom";
 
 /*--------------------------------------------------------------
-1.7 Grid (added)
+1.7 Bootstrap (added)
 --------------------------------------------------------------*/
-@import "grid/settings";
+@import "bootstrap/bootstrap.min";
 
 /*--------------------------------------------------------------
 1.7 Libs (added)
