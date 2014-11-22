@@ -25,7 +25,7 @@ get_header(); ?>
 					<!-- START OF BIKE MAKERS -->
 				
 				<div class="row">
-					<div class="col-xs-12 col-sm-3">
+					<div class="col-xs-12 col-sm-6 col-md-3">
 					<div class="center">
 						<h3><?php the_field('products_bicycles_subheader_1'); ?></h3>
 					</div>
@@ -33,7 +33,7 @@ get_header(); ?>
 					<p><?php the_field('products_bicycles_text_1'); ?></p>
 					</div>
 
-					<div class="col-xs-12 col-sm-3">
+					<div class="col-xs-12 col-sm-6 col-md-3">
 					<div class="center">
 						<h3><?php the_field('products_bicycles_subheader_2'); ?></h3>
 					</div>
@@ -41,7 +41,7 @@ get_header(); ?>
 					<p><?php the_field('products_bicycles_text_2'); ?></p>
 					</div>
 
-					<div class="col-xs-12 col-sm-3">
+					<div class="col-xs-12 col-sm-6 col-md-3">
 					<div class="center">
 						<h3><?php the_field('products_bicycles_subheader_3'); ?></h3>
 					</div>
@@ -49,7 +49,7 @@ get_header(); ?>
 					<p><?php the_field('products_bicycles_text_3'); ?></p>
 					</div>
 
-					<div class="col-xs-12 col-sm-3">
+					<div class="col-xs-12 col-sm-6 col-md-3">
 					<div class="center">
 						<h3><?php the_field('products_bicycles_subheader_4'); ?></h3>
 					</div>
