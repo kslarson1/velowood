@@ -46,6 +46,7 @@ and Blueprint http://www.blueprintcss.org/
 	12.1 Captions
 	12.2 Galleries
 --------------------------------------------------------------*/
+/*COLORS FROM THE VELOWOOD LOGO*/
 /*--------------------------------------------------------------
 1.0 Reset
 --------------------------------------------------------------*/
@@ -139,7 +140,6 @@ a img {
   background-color: #fff;
   min-height: 500px; }
   .full-width img {
-    margin-top: 2em;
     max-width: 200px; }
 
 .center {
@@ -200,28 +200,47 @@ a img {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #fff;
-  min-height: 450px; }
-
-.tuneup {
-  background-color: green; }
-
-.clear_text {
-  margin: 3em 0;
-  background-color: rgba(255, 255, 255, 0.6);
-  height: 300px;
-  width: 400px;
-  padding: 1em; }
+  min-height: 450px;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
 
 .bike_maker {
   display: block;
   min-width: 200px;
   margin: 1em auto 1em auto; }
 
+.clear_text {
+  margin: 1.5em 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  height: 300px;
+  width: 400px;
+  padding: 1em; }
+
+/*SERVICES PAGE*/
+.bikes {
+  padding: 3.5em 0; }
+
+.tuneup {
+  background-color: green;
+  padding: .5em 0; }
+
+.tuneup_box {
+  border: 1px solid #E53721;
+  border-radius: 1em;
+  min-height: 250px; }
+
 .service_image {
   display: block;
   margin: 1em auto 1em auto;
   max-width: 300px;
   width: 100%; }
+
+.services_area {
+  background-color: blue;
+  /*remove*/
+  min-height: 100px;
+  /*remove*/ }
 
 /*--------------------------------------------------------------
 1.7 Bootstrap (added)

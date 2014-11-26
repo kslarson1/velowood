@@ -6,7 +6,7 @@
 	min-height: 500px;
 
 		img {
-			margin-top: 2em;
+			
 			max-width: 200px;
 		}
 }
@@ -77,18 +77,9 @@
 	background-size: cover;
 	background-color: #fff;
 	min-height: 450px;
-}
-
-.tuneup {
-	background-color: green;
-}
-
-.clear_text {
-	margin: 3em 0;
-	background-color:rgba(255,255,255,0.6);
-	height: 300px;
-	width: 400px;
-	padding: 1em;
+	width: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 .bike_maker {
@@ -97,10 +88,39 @@
 	margin: 1em auto 1em auto;
 }
 
+.clear_text {
+	margin: 1.5em 0;
+	background-color:rgba(255,255,255,0.6);
+	height: 300px;
+	width: 400px;
+	padding: 1em;
+}
+
+    /*SERVICES PAGE*/
+.bikes {
+	padding: 3.5em 0;
+}
+
+.tuneup {
+	background-color: green;
+	padding: .5em 0;
+}
+
+.tuneup_box {
+	border: 1px solid $color_logo_darkorange;
+	border-radius: 1em;
+	min-height: 250px;
+}
+
 .service_image {
 	display: block;
 	margin: 1em auto 1em auto;
 	max-width: 300px;
 	width: 100%;
+}
+
+.services_area {
+	background-color: blue; /*remove*/
+	min-height: 100px;  /*remove*/
 }
 
