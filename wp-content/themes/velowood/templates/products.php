@@ -23,7 +23,7 @@ get_header(); ?>
 					<!-- START OF BIKE MAKERS -->		
 			
 			<div class="parts" style="background: url(<?php the_field('products_parts_background'); ?>)">
-			<div class="container">
+			<div class="container-fluid">
 				<div class="row">
 					<div class="col-xs-12 center">
 						<h1><?php the_field('products_bicycles_header'); ?></h1>
@@ -38,7 +38,7 @@ get_header(); ?>
 			</div>
 
 			<div class="bikes">
-			<div class="container">
+			<div class="container-fluid">
 			<div class="row">
 				<div class="col-xs-12 col-sm-6 col-md-3">
 				<div class="center">
