@@ -76,14 +76,14 @@ get_header(); ?>
 			</div>
 
 			<div class="accessories">
-			<div class="container">
+			<div class="container-fluid">
 			<div class="row">
-				<div class="col-xs-12 col-sm-8 col-sm-offset-2 center">
+				<div class="col-xs-12 col-sm-4 col-sm-offset-2 center">
 				<h3><?php the_field('accessories_title'); ?></h3>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-xs-12 col-sm-8 col-sm-offset-2">
+				<div class="col-xs-12 col-sm-4 col-sm-offset-2">
 				<p><?php the_field('accessories_text'); ?></p>
 				</div>
 			</div>
