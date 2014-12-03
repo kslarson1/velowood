@@ -195,6 +195,18 @@ a img {
   .home_nav a {
     margin: 0 1em 0 1em; }
 
+.accessories {
+  min-height: 500px;
+  background: white;
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, white), color-stop(24%, white), color-stop(100%, #f79b54));
+  background: -webkit-linear-gradient(top, white 0%, white 24%, #f79b54 100%);
+  background: linear-gradient(to bottom, white 0%, white 24%, #f79b54 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f79b54', GradientType=0 ); }
+  .accessories img {
+    max-height: 400px;
+    width: 100%;
+    border-radius: 1.5em; }
+
 .parts {
   background-position: left center;
   background-repeat: no-repeat;
@@ -221,26 +233,15 @@ a img {
 .bikes {
   padding: 3.5em 0; }
 
-.tuneup {
-  background-color: green;
-  padding: .5em 0; }
-
-.tuneup_box {
-  border: 1px solid #E53721;
-  border-radius: 1em;
-  min-height: 250px; }
-
-.service_image {
-  display: block;
-  margin: 1em auto 1em auto;
-  max-width: 300px;
-  width: 100%; }
-
 .services_area {
   background-color: blue;
   /*remove*/
   min-height: 100px;
   /*remove*/ }
+
+/*EMPLOYEES PAGE*/
+.employee_group {
+  padding: 4em 0; }
 
 /*--------------------------------------------------------------
 1.7 Bootstrap (added)

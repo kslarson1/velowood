@@ -37,7 +37,8 @@ get_header(); ?>
 					<div class="col-xs-12 center">
 					<h3><?php the_field('about_employees_header'); ?></h3>
 					</div>
-					
+
+					<div class="row">
 					<!-- BEGIN REPEATER -->
 				<?php
 				// check if the repeater field has rows of data
@@ -45,9 +46,7 @@ get_header(); ?>
 				 	// loop through the rows of data
 				    while ( have_rows('about_employees') ) : the_row(); ?>
 				      <!--   // display a sub field value -->
-				     
-				      <div class="row">
-					      <div class="col-xs-12 col-md-4">
+				     		<div class="col-xs-12 col-sm-6 col-md-4">   
 					      	<div class="circle" style="background-image: url(<?php the_sub_field('about_employee_image'); ?>)">
 					      	</div>
 					      	<div class="center">
@@ -55,16 +54,14 @@ get_header(); ?>
 					        </div>
 					        <?php the_sub_field('about_employee_background'); ?>
 					        </div>
-				       </div>
-				      
 				       <?php 
 				    endwhile;
 				else :
 				    // no rows found
 				endif;
 				?>
-				<!-- END OF REPEATER -->
-
+					<!-- END OF REPEATER -->
+					</div>
 				</div>
 				<!-- END OF EMPLOYEES -->
 				<!-- START OF CONTACT PAGE -->

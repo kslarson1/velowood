@@ -69,6 +69,23 @@
 	}
 }
 
+.accessories {
+	min-height: 500px;
+	background: rgba(255,255,255,1);
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 24%, rgba(247,155,84,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(24%, rgba(255,255,255,1)), color-stop(100%, rgba(247,155,84,1)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 24%, rgba(247,155,84,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 24%, rgba(247,155,84,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 24%, rgba(247,155,84,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 24%, rgba(247,155,84,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f79b54', GradientType=0 );
+		img {
+			max-height: 400px;
+			width: 100%;
+			border-radius: 1.5em;
+			}
+}
+
 .parts {
 	background-position: left center;
 	background-repeat: no-repeat;
@@ -99,26 +116,12 @@
 	padding: 3.5em 0;
 }
 
-.tuneup {
-	background-color: green;
-	padding: .5em 0;
-}
-
-.tuneup_box {
-	border: 1px solid $color_logo_darkorange;
-	border-radius: 1em;
-	min-height: 250px;
-}
-
-.service_image {
-	display: block;
-	margin: 1em auto 1em auto;
-	max-width: 300px;
-	width: 100%;
-}
-
 .services_area {
 	background-color: blue; /*remove*/
 	min-height: 100px;  /*remove*/
 }
 
+	/*EMPLOYEES PAGE*/
+.employee_group {
+	padding: 4em 0;
+}
