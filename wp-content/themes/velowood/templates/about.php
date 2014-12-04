@@ -33,7 +33,8 @@ get_header(); ?>
 					</div>
 				</div>
 				<!-- START OF EMPLOYEES -->
-				<div class="container">
+				
+				<div class="container" id="employees">
 					<div class="col-xs-12 center">
 					<h3><?php the_field('about_employees_header'); ?></h3>
 					</div>
@@ -65,13 +66,13 @@ get_header(); ?>
 				</div>
 				<!-- END OF EMPLOYEES -->
 				<!-- START OF CONTACT PAGE -->
-				<div class="container" id="contact">
+				<div class="container-fluid" id="contact">
 				<div class="row">
 				<div class="col-xs-12 center">
 					<h3><?php the_field('about_contact_header'); ?></h3>
 				</div>
-				<?php echo do_shortcode( '[contact-form-7 id="60" title="Contact Form"]' ); ?>
 				</div>
+				<?php echo do_shortcode( '[contact-form-7 id="60" title="Contact Form"]' ); ?>
 				</div>
 				<!-- END OF CONTACT PAGE -->
 					<!-- END OF ABOUT PAGE -->
