@@ -2192,11 +2192,13 @@ a {
 --------------------------------------------------------------*/
 .main-navigation {
   clear: both;
+  position: fixed;
+  z-index: 10;
+  background-color: rgba(150, 150, 150, 0.5);
   display: block;
   float: right;
   width: 100%;
-  text-align: center;
-  background-color: black; }
+  text-align: center; }
   .main-navigation ul {
     list-style: none;
     margin: 1em 0;
@@ -2225,8 +2227,7 @@ a {
   background-color: rgba(150, 150, 150, 0.5);
   position: fixed;
   z-index: 10;
-  font-size: 1.5em;
-  margin: 0 0 2em 0; }
+  font-size: 1.5em; }
 
 @media screen and (max-width: 600px) {
   .menu-toggle,

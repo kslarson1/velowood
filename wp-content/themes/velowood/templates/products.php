@@ -86,7 +86,7 @@ get_header(); ?>
 				<div class="col-xs-12 col-sm-4 col-sm-offset-2">
 				<p><?php the_field('accessories_text'); ?></p>
 				</div>
-				<div class="col-xs-12 col-sm-6">
+				<div class="col-xs-12 col-sm-4">
 				<img src="<?php the_field('accessories_image'); ?>">
 				</div>
 			</div>
