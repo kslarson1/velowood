@@ -133,6 +133,7 @@ a img {
 /*--------------------------------------------------------------
 1.5 Custom (added)
 --------------------------------------------------------------*/
+/*HOME AND VARIOUS STANDARDS*/
 .full-width {
   background-position: center center;
   background-repeat: no-repeat;
@@ -147,7 +148,10 @@ a img {
 
 .page_break {
   height: 150px;
-  background-color: #d6d6d6;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.61, #D6D6D6), color-stop(1, #F5F5F5), color-stop(1, #FFFFFF));
+  background-image: -webkit-linear-gradient(bottom, #D6D6D6 61%, #F5F5F5 100%, #FFFFFF 100%);
+  background-image: -webkit-linear-gradient(top, #D6D6D6 61%, #F5F5F5 100%, #FFFFFF 100%);
+  background-image: linear-gradient(to bottom, #D6D6D6 61%, #F5F5F5 100%, #FFFFFF 100%);
   width: 100%;
   font-size: 1.25em;
   display: -webkit-flex;
@@ -156,18 +160,6 @@ a img {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
-
-#about {
-  margin: 80px 0 0 0;
-  /*to account for fixed header*/ }
-
-#services {
-  margin: 80px 0 0 0;
-  /*to account for fixed header*/ }
-
-#gmap_canvas {
-  border-radius: 2em;
-  border: 1px solid black; }
 
 .circle {
   width: 100%;
@@ -229,9 +221,9 @@ a img {
   margin: 1em auto 1em auto; }
 
 .clear_text {
-  margin: 1.5em 0;
+  margin: 3.5em 0 0 0;
   background-color: rgba(235, 235, 235, 0.6);
-  height: 300px;
+  min-height: 300px;
   width: 400px;
   padding: 1em; }
 
@@ -249,6 +241,10 @@ a img {
     border-radius: 1.5em; }
 
 /*SERVICES PAGE*/
+#services {
+  margin: 80px 0 0 0;
+  /*to account for fixed header*/ }
+
 .bikes {
   padding: 3.5em 0; }
 
@@ -258,9 +254,19 @@ a img {
   min-height: 100px;
   /*remove*/ }
 
-/*EMPLOYEES PAGE*/
+/*ABOUT PAGE*/
+#about {
+  margin: 80px 0 0 0;
+  /*to account for fixed header*/
+  padding: 0 0 2em 0; }
+
 #employees {
   padding: 2em 0 2em 0; }
+
+.googlemaps {
+  background-color: blue;
+  width: 100%;
+  min-height: 300px; }
 
 /*CONTACT FORM 7*/
 .wpcf7 input[type="text"],
@@ -1964,13 +1970,15 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: Lora, serif;
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 1.5; }
 
 h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+  clear: both;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300; }
 
 h1 {
   font-size: 3em; }
@@ -1982,7 +1990,8 @@ h3 {
   font-size: 1.75em; }
 
 p {
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.5em;
+  font-family: 'Lora', serif; }
 
 b, strong {
   font-weight: bold; }
@@ -2213,6 +2222,9 @@ a {
 5.2 Menus
 --------------------------------------------------------------*/
 .main-navigation {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 1.15em;
   clear: both;
   position: fixed;
   top: 0;

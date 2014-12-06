@@ -17,13 +17,9 @@ get_header(); ?>
 				<?php get_template_part( 'content', 'page' ); ?>
 
 					<!-- START OF BIKE MAKERS -->		
-			
 			<div class="parts" style="background: url(<?php the_field('products_parts_background'); ?>)">
-			<div class="container-fluid">
+					<div class="container-fluid">
 				<div class="row">
-					<div class="col-xs-12 center">
-						<h1><?php the_field('products_bicycles_header'); ?></h1>
-					</div>
 					<div class="col-xs-12 col-sm-4 col-sm-offset-1">
 						<div class="clear_text">
 						<p><?php the_field('products_parts_text'); ?></p>
@@ -34,7 +30,11 @@ get_header(); ?>
 			</div>
 			<!-- PAGE BREAK -->
 			<div class="page_break">
+			<div class="container-fluid">
+			<div class="col-xs-12 center">
 				<h3><?php the_field('products_featured'); ?></h3>
+			</div>
+			</div>
 			</div>
 			<!-- START OF BIKE MAKERS SECTION -->
 			<div class="bikes">
@@ -77,7 +77,11 @@ get_header(); ?>
 			<!-- END OF BIKE MAKERS SECTION -->
 			<!-- PAGE BREAK -->
 			<div class="page_break">
+			<div class="container-fluid">
+			<div class="col-xs-12 center">
 				<h3><?php the_field('accessories_title'); ?></h3>
+			</div>
+			</div>
 			</div>
 			<!-- START OF ACCESSORIES SECTION -->
 			<div class="accessories">
