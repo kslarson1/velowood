@@ -17,6 +17,7 @@ get_header(); ?>
 				<?php get_template_part( 'content', 'page' ); ?>
 
 				<!-- START ABOUT PAGE -->
+				<div id="about">
 				<div class="container">
 				<div class="row">
 					<div class="col-xs-12 col-sm-6">
@@ -32,9 +33,10 @@ get_header(); ?>
 					</div>
 					</div>
 				</div>
-				<!-- START OF EMPLOYEES -->
-				
-				<div class="container" id="employees">
+
+				<!-- START OF EMPLOYEES -->	
+				<div id="employees">
+				<div class="container">
 					<div class="col-xs-12 center">
 					<h3><?php the_field('about_employees_header'); ?></h3>
 					</div>
@@ -64,7 +66,9 @@ get_header(); ?>
 					<!-- END OF REPEATER -->
 					</div>
 				</div>
+				</div>
 				<!-- END OF EMPLOYEES -->
+			
 				<!-- START OF CONTACT PAGE -->
 				<div class="container-fluid" id="contact">
 				<div class="row">
@@ -75,6 +79,7 @@ get_header(); ?>
 				<?php echo do_shortcode( '[contact-form-7 id="60" title="Contact Form"]' ); ?>
 				</div>
 				<!-- END OF CONTACT PAGE -->
+				</div>
 					<!-- END OF ABOUT PAGE -->
 
 			<?php endwhile; // end of the loop. ?>

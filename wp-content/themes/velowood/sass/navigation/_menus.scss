@@ -1,37 +1,36 @@
 .main-navigation {
 	clear: both;
 	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
 	z-index: 10;
-	background-color: rgba(150, 150, 150, .5);
-	display: block;
-	float: right;
+	height: 80px;
+	background-color: rgba(250, 250, 250, .75);
 	width: 100%;
 	text-align: center;
+	border-bottom: 1px solid black;
 
 	ul {
 		list-style: none;
 		margin: 1em 0;
-		padding-left: 0;	
+		padding-left: 0;
 	}
 
 	li {
 		margin: 0 .5em;
 		display: inline-block;
-		font-size: 1.25em;
+		font-size: 1.35em;
 		width: 110px;
-		padding: 8px;
-		color: #fff;
+		padding: 2px;
 		text-align: center;
 		outline: none;
 		text-decoration: none;
-		transition: background-color 0.2s ease-out,
-			border-color 0.2s ease-out;
+		transition: background-color 0.2s ease-out;
 		
 		:hover,active {
-			color: #66d8ed;
-			border-color: #66d8ed;
-			transition: border-color 0.4s ease-in,
-	        	color 0.4s ease-in;
+			color: $color_logo_darkorange;
+			transition: color 0.4s ease-in;
 		}
 	}
 

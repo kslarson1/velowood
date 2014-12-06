@@ -17,6 +17,7 @@ get_header(); ?>
 				<?php get_template_part( 'content', 'page' ); ?>
 
 				<!-- START OF SERVICES -->
+	<div id="services">
 	<div class="container-fluid">
 	<div class="row">
 		<div class="col-xs-12 center">
@@ -39,6 +40,7 @@ get_header(); ?>
 	</div>
 	</div>
 
+	</div>
 				<!-- END OF SERVICES		 -->
 
 			<?php endwhile; // end of the loop. ?>

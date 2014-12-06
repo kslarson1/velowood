@@ -1,10 +1,10 @@
 a {
-	color: $color__link;
+	color: $color_logo_lightorange;
 	
 	&:hover,
 	&:focus,
 	&:active {
-		color: $color__link-hover;
+		color: $color_logo_darkorange;
 		text-decoration: none;
 	}
 }

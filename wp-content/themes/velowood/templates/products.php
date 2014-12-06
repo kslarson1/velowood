@@ -16,10 +16,6 @@ get_header(); ?>
 
 				<?php get_template_part( 'content', 'page' ); ?>
 
-				<!-- START BICYCLES PRODUCTS SECTION -->
-			<div class="container-fluid">
-				
-			</div>
 					<!-- START OF BIKE MAKERS -->		
 			
 			<div class="parts" style="background: url(<?php the_field('products_parts_background'); ?>)">
@@ -36,7 +32,11 @@ get_header(); ?>
 				</div>
 			</div>
 			</div>
-
+			<!-- PAGE BREAK -->
+			<div class="page_break">
+				<h3><?php the_field('products_featured'); ?></h3>
+			</div>
+			<!-- START OF BIKE MAKERS SECTION -->
 			<div class="bikes">
 			<div class="container-fluid">
 			<div class="row">
@@ -74,14 +74,14 @@ get_header(); ?>
 			</div>
 			</div>
 			</div>
-
+			<!-- END OF BIKE MAKERS SECTION -->
+			<!-- PAGE BREAK -->
+			<div class="page_break">
+				<h3><?php the_field('accessories_title'); ?></h3>
+			</div>
+			<!-- START OF ACCESSORIES SECTION -->
 			<div class="accessories">
 			<div class="container-fluid">
-			<div class="row">
-				<div class="col-xs-12 col-sm-4 col-sm-offset-2 center">
-				<h3><?php the_field('accessories_title'); ?></h3>
-				</div>
-			</div>
 			<div class="row">
 				<div class="col-xs-12 col-sm-4 col-sm-offset-2">
 				<p><?php the_field('accessories_text'); ?></p>
@@ -92,9 +92,8 @@ get_header(); ?>
 			</div>
 			</div>
 			</div>
-			
-				<!-- END OF BIKE MAKERS -->
 				<!-- START OF ACCESORIES -->
+
 			<?php endwhile; // end of the loop. ?>
 
 		</main><!-- #main -->
