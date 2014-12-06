@@ -2221,15 +2221,25 @@ a {
 
 /* Small menu */
 .menu-toggle {
-  display: none; }
+  display: none;
+  background-color: rgba(150, 150, 150, 0.5);
+  position: fixed;
+  z-index: 10;
+  font-size: 1.5em;
+  margin: 0 0 2em 0; }
 
 @media screen and (max-width: 600px) {
   .menu-toggle,
   .main-navigation.toggled .nav-menu {
-    display: block; }
+    display: block;
+    width: 100%; }
 
   .main-navigation ul {
-    display: none; } }
+    display: none;
+    width: 100%; }
+
+  .main-navigatoin li {
+    width: 100%; } }
 .site-main .comment-navigation,
 .site-main .paging-navigation,
 .site-main .post-navigation {
@@ -2239,7 +2249,7 @@ a {
 .comment-navigation .nav-previous,
 .paging-navigation .nav-previous,
 .post-navigation .nav-previous {
-  float: left;
+  float: right;
   width: 50%; }
 
 .comment-navigation .nav-next,
