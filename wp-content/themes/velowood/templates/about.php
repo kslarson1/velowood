@@ -57,7 +57,7 @@ get_header(); ?>
 				 	// loop through the rows of data
 				    while ( have_rows('about_employees') ) : the_row(); ?>
 				      <!--   // display a sub field value -->
-				     		<div class="col-xs-12 col-sm-6 col-md-4">   
+				     		<div class="col-xs-12 col-sm-6 col-md-4">
 					      	<div class="circle" style="background-image: url(<?php the_sub_field('about_employee_image'); ?>)">
 					      	</div>
 					      	<div class="center">
