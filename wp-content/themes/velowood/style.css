@@ -147,11 +147,9 @@ a img {
   text-align: center; }
 
 .page_break {
-  height: 150px;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.61, #D6D6D6), color-stop(1, #F5F5F5), color-stop(1, #FFFFFF));
+  height: 100px;
   background-image: -webkit-linear-gradient(bottom, #D6D6D6 61%, #F5F5F5 100%, #FFFFFF 100%);
-  background-image: -webkit-linear-gradient(top, #D6D6D6 61%, #F5F5F5 100%, #FFFFFF 100%);
-  background-image: linear-gradient(to bottom, #D6D6D6 61%, #F5F5F5 100%, #FFFFFF 100%);
+  background-image: linear-gradient(to top, #D6D6D6 61%, #F5F5F5 100%, #FFFFFF 100%);
   width: 100%;
   font-size: 1.25em;
   display: -webkit-flex;
@@ -263,10 +261,22 @@ a img {
 #employees {
   padding: 2em 0 2em 0; }
 
-.googlemaps {
-  background-color: blue;
+#googlemaps {
+  background-color: #fff;
+  position: relative;
+  float: right;
   width: 100%;
-  min-height: 300px; }
+  min-height: 250px; }
+  #googlemaps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  @media (min-width: 768px) {
+    #googlemaps {
+      width: 50%;
+      min-height: 350px; } }
 
 /*CONTACT FORM 7*/
 .wpcf7 input[type="text"],

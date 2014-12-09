@@ -24,16 +24,15 @@ get_header(); ?>
 						<div class="center">
 						<h3><?php the_field('about_history_header'); ?></h3>
 						</div>
-						<div class="col-xs-12">
-						<p><?php the_field('about_history_text'); ?></p>
-						</div>
+						<p><?php the_field('about_history_text'); ?></p>	
 					</div>
-
-					<div class="col-xs-12 col-sm-6">
-					<div class="googlemaps">
-dsflkhjas
+		
+					<!-- START OF GOOGLE MAPS BACKGROUND -->
+							
+					<div id="googlemaps">
+<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Velowood%20Cycler%202526%20E.%20Colfax%20Ave%2C%20Denver%2C%20CO%2C%20United%20States&key=AIzaSyAG9xmCxdpzO_SZ4gppoE2kzB2MkZiktP4"></iframe>
 					</div>
-					</div>
+					<!-- END OF GOOGLE MAPS BACKGROUND -->
 				</div>
 				</div>
 

@@ -372,6 +372,15 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/sass\/css\/bootstrap.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/sass\/css\/bootstrap.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/sass\/css\/custom.css": {
 		"fileType": 16,
 		"ignore": 1,
