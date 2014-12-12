@@ -11,11 +11,17 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'velowood' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'velowood' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'velowood' ), 'Velowood', '<a href="http://www.dripforward.com" rel="designer">Karl Larson</a>' ); ?>
-		</div><!-- .site-info -->
+		<div class="container-fluid">
+		<div class="row">
+		<div class="col-xs-12">
+			<ul class="social_media">
+				<li><a href ="https://plus.google.com/108168933898080032336/about" target="_blank"><i class="fa fa-google fa-lg"></i></a></li>
+				<li><a href ="https://www.facebook.com/pages/Velowood-Cyclery/166689280052684" target="_blank"><i class="fa fa-facebook fa-lg"></i></a></li>
+				<li><a href ="http://www.yelp.com/biz/velowood-cyclery-denver" target="_blank"><i class="fa fa-yelp fa-lg"></i></a></li>
+			</ul>
+			</div>
+		</div>
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

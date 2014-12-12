@@ -295,6 +295,36 @@ a img {
   #contact h3 {
     margin: 1.5em 0 1em 0; }
 
+/*FOOTER*/
+.site-footer {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 1.15em;
+  clear: both;
+  bottom: 0;
+  height: 80px;
+  background-color: #939393;
+  width: 100%;
+  text-align: center; }
+  .site-footer ul {
+    list-style: none; }
+
+.social_media {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 400px;
+  margin: 0 auto; }
+  .social_media li {
+    margin: 1.5em auto 0 auto; }
+  .social_media a {
+    color: #E53721; }
+  .social_media a:hover {
+    color: black;
+    -webkit-transition: color 0.3s ease-in;
+            transition: color 0.3s ease-in; }
+
 /*--------------------------------------------------------------
 1.7 Bootstrap (added)
 --------------------------------------------------------------*/
@@ -2129,7 +2159,7 @@ input[type="submit"] {
   display: inline-block;
   width: 200px;
   padding: 8px;
-  background-color: #f47515;
+  background-color: rgba(255, 255, 255, 0.4);
   color: #000;
   border: 1px solid #000;
   text-align: center;
@@ -2142,15 +2172,11 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-  color: #E53721;
   background-color: #000;
   /* fallback */
-  background-color: rgba(255, 255, 255, 0.4);
-  border-color: #fff;
-  /* fallback */
-  border-color: #E53721;
-  -webkit-transition: background-color 0.3s ease-in, border-color 0.3s ease-in, color .3s ease-in;
-          transition: background-color 0.3s ease-in, border-color 0.3s ease-in, color .3s ease-in; }
+  background-color: #f47515;
+  -webkit-transition: background-color 0.3s ease-in;
+          transition: background-color 0.3s ease-in; }
 
 button:focus,
 input[type="button"]:focus,
@@ -2249,7 +2275,7 @@ a {
   background-color: rgba(250, 250, 250, 0.75);
   width: 100%;
   text-align: center;
-  border-bottom: 1px solid black; }
+  border-bottom: 1px solid #939393; }
   .main-navigation ul {
     list-style: none;
     margin: 1em 0;

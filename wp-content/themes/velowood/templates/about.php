@@ -61,7 +61,7 @@ get_header(); ?>
 					      	<div class="circle" style="background-image: url(<?php the_sub_field('about_employee_image'); ?>)">
 					      	</div>
 					      	<div class="center">
-					        <h4><?php the_sub_field('about_employee_name'); ?></h4>
+					        <h3><?php the_sub_field('about_employee_name'); ?></h3>
 					        </div>
 					        <?php the_sub_field('about_employee_background'); ?>
 					        </div>

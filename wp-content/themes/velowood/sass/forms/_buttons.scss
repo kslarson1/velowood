@@ -5,7 +5,7 @@ input[type="submit"] {
 	display: inline-block;
 	width: 200px;
 	padding: 8px;
-	background-color: $color_logo_lightorange;
+	background-color: rgba(255, 255, 255, 0.4);
 	color: #000;
 	border: 1px solid #000;
 	text-align: center;
@@ -19,14 +19,11 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-	color: #E53721;
 	background-color: #000; /* fallback */
-	background-color: rgba(255, 255, 255, 0.4);
-	border-color: #fff; /* fallback */
-	border-color: $color_logo_darkorange;
+	background-color: $color_logo_lightorange;
+
 		transition: background-color 0.3s ease-in,
-		border-color 0.3s ease-in,
-		color .3s ease-in;
+		
 }
 
 button:focus,

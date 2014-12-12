@@ -186,3 +186,48 @@
 		margin: 1.5em 0 1em 0;
 	}
 }
+
+	/*FOOTER*/
+.site-footer {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 1.15em;
+	clear: both;
+	bottom: 0;
+	height: 80px;
+	background-color: $color_standard_gray;
+	width: 100%;
+	text-align: center;
+
+	ul {
+		list-style: none;
+	}
+
+}
+
+.social_media {
+	display: flex;
+	height: 100%;
+	width: 400px;
+	margin: 0 auto;
+	li {
+		margin: 1.5em auto 0 auto;
+	}
+	a {
+		color: $color_logo_darkorange;
+	}
+	a:hover {
+		color: black;
+		transition: color 0.3s ease-in,
+	}
+}
+
+
+
+
+
+
+
+
+
+
