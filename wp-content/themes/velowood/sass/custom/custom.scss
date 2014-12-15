@@ -90,8 +90,9 @@
 
 .bike_maker {
 	display: block;
-	min-width: 200px;
-	margin: 1em auto 1em auto;
+	width: 100%;
+	max-width: 500px;
+	margin: 0 auto;
 }
 
 .clear_text {
