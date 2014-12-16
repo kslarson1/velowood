@@ -40,6 +40,7 @@ get_header(); ?>
 					</div>
 				</div>
 				</div>
+				</div>
 				<!-- END OF HERO SECTION -->
 
 			<?php endwhile; // end of the loop. ?>

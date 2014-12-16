@@ -18,7 +18,7 @@ get_header(); ?>
 
 					<!-- START OF BIKE MAKERS -->		
 			<div class="parts" style="background: url(<?php the_field('products_parts_background'); ?>)">
-					<div class="container-fluid">
+			<div class="container-fluid">
 				<div class="row">
 					<div class="col-xs-12 col-sm-4 col-sm-offset-1">
 						<div class="clear_text">
@@ -99,19 +99,18 @@ get_header(); ?>
 			</div>
 			</div>
 			<!-- START OF ACCESSORIES SECTION -->
-			<div class="accessories">
-			<div class="container-fluid">
+			<div class="accessories" style="background: url(<?php the_field('accessories_background'); ?>)">
+			<div class="container">
 			<div class="row">
-				<div class="col-xs-12 col-sm-4 col-sm-offset-2">
+				<div class="col-xs-12 col-sm-4 col-sm-offset-1">
+				<div class="clear_text2">
 				<p><?php the_field('accessories_text'); ?></p>
 				</div>
-				<div class="col-xs-12 col-sm-4">
-				<img src="<?php the_field('accessories_image'); ?>">
 				</div>
 			</div>
 			</div>
 			</div>
-				<!-- START OF ACCESORIES -->
+				<!-- END OF ACCESSORIES -->
 
 			<?php endwhile; // end of the loop. ?>
 

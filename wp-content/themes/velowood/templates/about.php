@@ -30,14 +30,13 @@ get_header(); ?>
 					<!-- START OF GOOGLE MAPS BACKGROUND -->
 							
 					<div id="googlemaps">
-<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Velowood%20Cycler%202526%20E.%20Colfax%20Ave%2C%20Denver%2C%20CO%2C%20United%20States&key=AIzaSyAG9xmCxdpzO_SZ4gppoE2kzB2MkZiktP4"></iframe>
+<iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Velowood%20Cycler%202526%20E.%20Colfax%20Ave%2C%20Denver%2C%20CO%2C%20United%20States&key=AIzaSyAG9xmCxdpzO_SZ4gppoE2kzB2MkZiktP4"></iframe>
 					</div>
 					<!-- END OF GOOGLE MAPS BACKGROUND -->
 				</div>
 				</div>
 
 				<!-- BREAK -->
-				
 				<div class="page_break">
 				<div class="container-fluid">
 				<div class="col-xs-12 center">
@@ -79,12 +78,17 @@ get_header(); ?>
 				<!-- END OF EMPLOYEES -->
 			
 				<!-- START OF CONTACT PAGE -->
-				<div class="container" id="contact">
-				<div class="row">
+				
+				<!-- BREAK -->
+				<div class="page_break">
+				<div class="container-fluid">
 				<div class="col-xs-12 center">
 					<h3><?php the_field('about_contact_header'); ?></h3>
 				</div>
 				</div>
+				</div>
+
+				<div class="container" id="contact">
 				<?php echo do_shortcode( '[contact-form-7 id="60" title="Contact Form"]' ); ?>
 				</div>
 				<!-- END OF CONTACT PAGE -->

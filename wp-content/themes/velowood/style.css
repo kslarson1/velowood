@@ -133,26 +133,16 @@ a img {
 /*--------------------------------------------------------------
 1.5 Custom (added)
 --------------------------------------------------------------*/
-/*HOME AND VARIOUS STANDARDS*/
-.full-width {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #fff;
-  margin-top: 80px;
-  /* account for header */
-  padding: 4em 0 0 0; }
-  .full-width img {
-    max-width: 200px; }
-
+/*VARIOUS STANDARDS*/
 .center {
   text-align: center; }
 
 .page_break {
   height: 100px;
-  background-image: -webkit-linear-gradient(bottom, #D6D6D6 61%, #F5F5F5 100%, #FFFFFF 100%);
-  background-image: linear-gradient(to top, #D6D6D6 61%, #F5F5F5 100%, #FFFFFF 100%);
   width: 100%;
+  background-color: #fff;
+  border-top: 2px solid #E53721;
+  border-bottom: 2px solid #E53721;
   font-size: 1.25em;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -214,6 +204,18 @@ a img {
   -webkit-transition: background-color 0.3s ease-in, border-color 0.3s ease-in, color .5s ease-in;
           transition: background-color 0.3s ease-in, border-color 0.3s ease-in, color .5s ease-in; }
 
+/*HOME PAGE*/
+.full-width {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fff;
+  padding: 6em 0 0 0; }
+  .full-width img {
+    max-width: 200px; }
+  .full-width h3 {
+    color: #fff; }
+
 .home_button {
   font-size: 2em;
   color: #8d8d8d;
@@ -235,14 +237,14 @@ a img {
   background-color: #fff;
   min-height: 650px;
   width: 100%;
-  margin: 0;
   margin: 80px 0 0 0; }
 
 .bike_maker {
   display: block;
   max-width: 100%;
   max-height: 480px;
-  margin: 2em auto; }
+  margin: 2em auto;
+  box-shadow: 0 0 2em #939393; }
 
 .clear_text {
   margin: 3.5em 0 0 0;
@@ -251,18 +253,25 @@ a img {
   width: 400px;
   padding: 1em; }
 
+.clear_text2 {
+  margin: 3.5em 0 0 0;
+  background-color: rgba(235, 235, 235, 0.6);
+  min-height: 300px;
+  width: 400px;
+  padding: 1em; }
+
 .accessories {
-  margin: 2em 0 0 0;
-  min-height: 500px;
-  background: white;
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, white), color-stop(24%, white), color-stop(100%, #f79b54));
-  background: -webkit-linear-gradient(top, white 0%, white 24%, #f79b54 100%);
-  background: linear-gradient(to bottom, white 0%, white 24%, #f79b54 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f79b54', GradientType=0 ); }
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #fff;
+  min-height: 750px;
+  width: 100%; }
   .accessories img {
-    max-height: 400px;
-    width: 100%;
-    border-radius: 1.5em; }
+    display: block;
+    max-width: 100%;
+    box-shadow: 0 0 2em #939393; }
 
 /*SERVICES PAGE*/
 #services {
@@ -290,7 +299,7 @@ a img {
   position: relative;
   float: right;
   width: 100%;
-  min-height: 250px; }
+  height: 350px; }
   #googlemaps iframe {
     position: absolute;
     top: 0;
@@ -300,7 +309,7 @@ a img {
   @media (min-width: 768px) {
     #googlemaps {
       width: 50%;
-      min-height: 300px; } }
+      min-height: 475px; } }
 
 /*CONTACT FORM 7*/
 .wpcf7 input[type="text"],
@@ -2305,7 +2314,6 @@ a {
     display: inline-block;
     font-size: 1.35em;
     width: 110px;
-    padding: 2px;
     text-align: center;
     outline: none;
     text-decoration: none;
