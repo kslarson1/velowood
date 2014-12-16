@@ -26,8 +26,7 @@ get_header(); ?>
 						</div>
 					<div class="row">
 						<div class="col-xs-12 center">
-						<h3><?php the_field('home_main_text'); ?>
-						</h3>
+						<h3><?php the_field('home_main_text'); ?></h3>
 						</div>
 					</div>
 					<div class="row">
