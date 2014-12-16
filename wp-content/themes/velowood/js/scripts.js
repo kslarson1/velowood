@@ -17,15 +17,15 @@ $('.full-width').css({'height': vph + 'px'});
 $('.full-width h1').css({'margin-top': (vph / 1.75) * 0.2 + 'px'});
 
 // Circle variable width
-    cirW = $('.circle').width();
+    cirW = $('.ch-grid li').width();
 
-    $('.circle').css({'height': cirW + 'px'}); // Setting the Height of a class equal to the viewport height divided by 2
+    $('.ch-grid li').css({'height': cirW + 'px'}); //  Setting height equal to width
     // End of circle variable width
 
 // bike_maker variable width
     cirW = $('.bike_maker').width();
 
-    $('.bike_maker').css({'height': cirW + 'px'}); // Setting the Height of a class equal to the viewport height divided by 2
+    $('.bike_maker').css({'height': cirW + 'px'}); // Setting height equal to width
     // End of bike_maker variable width
 
 // Portfolio Thumbnails
