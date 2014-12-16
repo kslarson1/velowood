@@ -18,7 +18,7 @@ get_header(); ?>
 
 				<!-- START ABOUT PAGE -->
 				<div id="about">
-				<div class="container-fluid">
+				<div class="container">
 				<div class="row">
 					<div class="col-xs-12 col-sm-6">
 						<div class="center">
@@ -48,7 +48,7 @@ get_header(); ?>
 				
 				<!-- START OF EMPLOYEES -->	
 				<div id="employees">
-					<div class="container-fluid">
+					<div class="container">
 					<div class="row">
 					<!-- BEGIN REPEATER -->
 				<?php
@@ -58,11 +58,12 @@ get_header(); ?>
 				    while ( have_rows('about_employees') ) : the_row(); ?>
 				      <!--   // display a sub field value -->
 				     		<div class="col-xs-12 col-sm-6 col-md-4">
-					      	<div class="circle" style="background-image: url(<?php the_sub_field('about_employee_image'); ?>)">
+				     		<!-- START CIRCLE IMAGE -->
+					      	<div class="circle center" style="background-image: url(<?php the_sub_field('about_employee_image'); ?>)">
+					      	<h3><?php the_sub_field('about_employee_name'); ?></h3>
+					      	<p><?php the_sub_field('about_employee_fact'); ?></p>
 					      	</div>
-					      	<div class="center">
-					        <h3><?php the_sub_field('about_employee_name'); ?></h3>
-					        </div>
+					      	<!-- END OF CIRCLE IMAGE -->
 					        <?php the_sub_field('about_employee_background'); ?>
 					        </div>
 				       <?php 
@@ -78,7 +79,7 @@ get_header(); ?>
 				<!-- END OF EMPLOYEES -->
 			
 				<!-- START OF CONTACT PAGE -->
-				<div class="container-fluid" id="contact">
+				<div class="container" id="contact">
 				<div class="row">
 				<div class="col-xs-12 center">
 					<h3><?php the_field('about_contact_header'); ?></h3>
