@@ -49,16 +49,22 @@
 @media screen and (max-width: 600px) {
 	.menu-toggle,
 	.main-navigation.toggled .nav-menu {
+		height: 80px;
 		display: block;
 		width: 100%;
+		background: #fff;
 	}
 
 	.main-navigation ul {
+		margin: 80px 0 0 0;
 		display: none;
 		width: 100%;
 	}
-	.main-navigatoin li {
+	.main-navigation li {
+		background-color: #fff;
+		margin: 0;
 		width: 100%;
+		border: 1px solid black;
 	}
 }
 

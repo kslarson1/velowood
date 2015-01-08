@@ -22,7 +22,7 @@
 	width: 200px;
 	padding: 8px;
 	color: #fff;
-	border: 1px solid #fff;
+	border: 1px solid $color_logo_lightorange;
 	border-radius: 1em;
 	text-align: center;
 	outline: none;
@@ -32,14 +32,14 @@
 }
 .ghost_button_semi:hover,
 .ghost_button_semi:active {
-	color: $color_logo_lightorange;
+	color: $color_logo_darkorange;
 	background-color: #fff; /* fallback */
 	background-color: rgba(255, 255, 255, 0.4);
 	border-color: #fff; /* fallback */
 	border-color: rgba(255, 255, 255, 0.4);
 		transition: background-color 0.3s ease-in,
 		border-color 0.3s ease-in,
-		color .5s ease-in;
+		color .3s ease-in;
 }
 
 
@@ -49,12 +49,14 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-color: #fff;
+	min-height: 500px;
 	padding: 6em 0 0 0;
-		img {
-			max-width: 200px;
+	margin: -47px;			/*to remove white space above background image */
+	img {
+		max-width: 200px;
+		padding: 3em 0 0 0;
 		}
 	h3 {
-		padding: 8em 0 0 0;
 		color: #fff;
 	}
 }
@@ -75,23 +77,34 @@
 	}
 }
 
+.clear_text4 {
+	margin: 10em 0 0 0;
+	background-color:rgba(235,235,235,0.4);
+	border-radius: 2em;
+	width: 100%;
+	padding: 1em;
+	box-shadow: 0 0 .5em $color_standard_gray;
+}
+
 	/*START OF PRODUCTS SECTION*/
 .parts {
 	background-position: left center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-color: #fff;
-	min-height: 650px;
+	min-height: 750px;
 	width: 100%;
 	margin: 80px 0 0 0;
 }
 
 .bike_maker {
 	display: block;
-	max-width: 100%;
-	max-height: 480px;
+	max-height: 500px;
 	margin: 2em auto;
 	box-shadow: 0 0 2em $color_standard_gray;
+	@media (max-width: 768px) {
+		max-height: 260px;
+	}
 }
 
 .clear_text {
@@ -107,7 +120,7 @@
 	margin: 3.5em 0 0 0;
 	background-color:rgba(235,235,235,0.6);
 	min-height: 300px;
-	width: 400px;
+	width: 100%;
 	padding: 1em;
 	box-shadow: 0 0 .5em $color_standard_gray;
 }
@@ -128,8 +141,28 @@
 }
 
     /*SERVICES PAGE*/
+.services_full {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #fff;
+	min-height: 750px;
+	width: 100%;
+	margin: -50px 0 0 0;		/*to remove white space above background image*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.clear_text3 {
+	background-color:rgba(235,235,235,0.6);
+	min-height: 300px;
+	width: 100%;
+	padding: 1em;
+	box-shadow: 0 0 .5em $color_standard_gray;
+}
+
 #services {
-	margin: 80px 0 0 0;	/*to account for fixed header*/
 }
 
 .bikes {
@@ -198,7 +231,7 @@
 }
 
 .ch-item {
-	margin: auto auto;
+	margin: 2em auto 2em auto;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -206,7 +239,6 @@
     height: 100%;
     border-radius: 50%;
     position: relative;
-    cursor: default;
     box-shadow: 
         inset 0 0 0 0 rgba(200,95,66, 0.4),
         inset 0 0 0 16px rgba(255,255,255,0.6),
@@ -215,7 +247,7 @@
 }
 
 .ch-info {
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -256,44 +288,8 @@
     opacity: 1;
     transform: scale(1);    
 }
-
 	/*END OF CIRCULAR IMAGES*/
 
-.circle {
-	width: 100%;
-	max-height: 500px;
-	max-width: 500px;
-	border-radius: 50%;
-	background-size: cover;
-	background-position: center;
-	margin: auto auto;
-	box-shadow: 
-		inset 0 0 0 0 rgba(200,95,66, 0.4),
-		inset 0 0 0 16px rgba(255,255,255,0.6),
-		0 1px 2px rgba(0,0,0,0.1);
-	transition: all 0.4s ease-in-out;
-}
-
-.circle h3 {
-	color: #fff;
-    position: relative;
-    letter-spacing: 2px;
-    margin: 0 30px;
-    padding: 1.5em 0 0 4em;
-    height: 110px;
-}
-.circle p {
-	color: #fff;
-    padding: auto auto;
-    font-style: italic;
-    margin: auto auto;
-}
-.circle:hover {
-    box-shadow: 
-        inset 0 0 0 80px rgba(200,95,66, 0.4),
-        inset 0 0 0 16px rgba(255,255,255,0.8),
-        0 1px 2px rgba(0,0,0,0.1);
-}
 
 	/*CONTACT FORM 7*/
 .wpcf7 input[type="text"],
@@ -318,7 +314,7 @@
 	}
 }
 
-	/*FOOTER*/
+/*FOOTER*/
 .site-footer {
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
@@ -326,7 +322,7 @@
 	clear: both;
 	bottom: 0;
 	height: 80px;
-	background-color: $color_standard_gray;
+	background-color: rgba(235,235,235,1);;
 	width: 100%;
 	text-align: center;
 

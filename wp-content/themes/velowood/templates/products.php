@@ -102,9 +102,21 @@ get_header(); ?>
 			<div class="accessories" style="background: url(<?php the_field('accessories_background'); ?>)">
 			<div class="container">
 			<div class="row">
-				<div class="col-xs-12 col-sm-4 col-sm-offset-1">
+				<div class="col-xs-12 col-sm-6 col-sm-offset-3">
 				<div class="clear_text2">
 				<p><?php the_field('accessories_text'); ?></p>
+					<div class="row">
+						<div class="col-xs-6">
+						<ul>
+						<li>item 1</li>
+						</ul>
+						</div>
+						<div class="col-xs-6">
+						<ul>
+						<li>item 2</li>
+						</ul>
+						</div>
+					</div>
 				</div>
 				</div>
 			</div>

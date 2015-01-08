@@ -17,32 +17,36 @@ get_header(); ?>
 				<?php get_template_part( 'content', 'page' ); ?>
 
 				<!-- START OF HERO SECTION -->
-				<div class="full-width" style="background-image: url(<?php the_field('home_hero_image'); ?>);" >
-					<div class="container">
-						<div class="row">
-							<div class="col-xs-12 center">
-								<img src="<?php the_field('home_logo'); ?>" />
-							</div>
-						</div>
-					<div class="row">
-						<div class="col-xs-12 center">
-						<h3><?php the_field('home_main_text'); ?></h3>
-						</div>
-					</div>
-					<div class="row">
-						<div class="home_nav">
-						<div class="col-xs-12 center">
-							<a href="/about.com" class="ghost_button_semi">Products</a>
-							<a href="/about.com" class="ghost_button_semi">Services</a>
-							<a href="/about.com" class="ghost_button_semi">About</a>
-						</div>
-					</div>
+	<div class="full-width" style="background-image: url(<?php the_field('home_hero_image'); ?>);" >
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 center">
+					<img src="<?php the_field('home_logo'); ?>" />
 				</div>
-				</div>
-				</div>
+			</div>
+		<div class="row">
+			<div class="col-xs-12 center">
+			<div class="clear_text4">
+			<h3><?php the_field('home_main_text'); ?></h3>
+			</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="home_nav">
+			<div class="col-xs-12 center">
+				<a href="/about.com" class="ghost_button_semi">Products</a>
+				<a href="/about.com" class="ghost_button_semi">Services</a>
+				<a href="/about.com" class="ghost_button_semi">About</a>
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
 				<!-- END OF HERO SECTION -->
 
 			<?php endwhile; // end of the loop. ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
+<?php get_footer(); ?>

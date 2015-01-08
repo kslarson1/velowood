@@ -9,7 +9,7 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-<link href='http://fonts.googleapis.com/css?family=Lato:300,400|Lora:400,700' rel='stylesheet' type='text/css'> <!-- link Google Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400|Merriweather:400,300' rel='stylesheet' type='text/css'> <!-- link Google Fonts -->
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> <!-- link Font Awesome -->
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,7 +27,7 @@
 	<header id="masthead" class="site-header" role="banner">
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle"><?php _e( 'Primary Menu', 'velowood' ); ?></button>
+			<button class="menu-toggle"><?php _e( 'Menu', 'velowood' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->

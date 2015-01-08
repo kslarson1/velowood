@@ -12,8 +12,8 @@ function resizeDiv() {
   headerH = $('#masthead').height();
 
 // Your Styles
-// My Style 1
-$('.full-width').css({'height': vph + 'px'});
+// Home page background image height
+$('.full-width').css({'height': vph + 47 + 'px'});
 $('.full-width h1').css({'margin-top': (vph / 1.75) * 0.2 + 'px'});
 
 // Circle variable width

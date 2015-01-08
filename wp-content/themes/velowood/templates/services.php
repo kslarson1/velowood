@@ -18,16 +18,15 @@ get_header(); ?>
 
 				<!-- START OF SERVICES -->
 	<div id="services">
+	<div class="services_full" style="background: url(<?php the_field('services_background'); ?>)">
 	<div class="container">
 	<div class="row">
-		<div class="col-xs-12 center">
-			<h2><?php the_field ('services_header'); ?></h2>
+		<div class="col-xs-12 col-sm-8 col-sm-offset-2">
+			<div class="clear_text3">
+				<p><?php the_field('services_subheader'); ?></p>
+			</div>
 		</div>
 	</div>
-	<div class="row">
-		<div class="col-xs-12 col-sm-8 col-sm-offset-2">
-		<p><?php the_field('services_subheader'); ?></p>
-		</div>
 	</div>
 	</div>
 

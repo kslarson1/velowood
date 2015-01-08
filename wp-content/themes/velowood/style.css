@@ -157,7 +157,7 @@ a img {
   width: 200px;
   padding: 8px;
   color: #fff;
-  border: 1px solid #fff;
+  border: 1px solid #f47515;
   border-radius: 1em;
   text-align: center;
   outline: none;
@@ -167,15 +167,15 @@ a img {
 
 .ghost_button_semi:hover,
 .ghost_button_semi:active {
-  color: #f47515;
+  color: #E53721;
   background-color: #fff;
   /* fallback */
   background-color: rgba(255, 255, 255, 0.4);
   border-color: #fff;
   /* fallback */
   border-color: rgba(255, 255, 255, 0.4);
-  -webkit-transition: background-color 0.3s ease-in, border-color 0.3s ease-in, color .5s ease-in;
-          transition: background-color 0.3s ease-in, border-color 0.3s ease-in, color .5s ease-in; }
+  -webkit-transition: background-color 0.3s ease-in, border-color 0.3s ease-in, color .3s ease-in;
+          transition: background-color 0.3s ease-in, border-color 0.3s ease-in, color .3s ease-in; }
 
 /*HOME PAGE*/
 .full-width {
@@ -183,11 +183,14 @@ a img {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #fff;
-  padding: 6em 0 0 0; }
+  min-height: 500px;
+  padding: 6em 0 0 0;
+  margin: -47px;
+  /*to remove white space above background image */ }
   .full-width img {
-    max-width: 200px; }
+    max-width: 200px;
+    padding: 3em 0 0 0; }
   .full-width h3 {
-    padding: 8em 0 0 0;
     color: #fff; }
 
 .home_button {
@@ -203,22 +206,32 @@ a img {
   .home_nav a {
     margin: 0 1em 0 1em; }
 
+.clear_text4 {
+  margin: 10em 0 0 0;
+  background-color: rgba(235, 235, 235, 0.4);
+  border-radius: 2em;
+  width: 100%;
+  padding: 1em;
+  box-shadow: 0 0 0.5em #939393; }
+
 /*START OF PRODUCTS SECTION*/
 .parts {
   background-position: left center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #fff;
-  min-height: 650px;
+  min-height: 750px;
   width: 100%;
   margin: 80px 0 0 0; }
 
 .bike_maker {
   display: block;
-  max-width: 100%;
-  max-height: 480px;
+  max-height: 500px;
   margin: 2em auto;
   box-shadow: 0 0 2em #939393; }
+  @media (max-width: 768px) {
+    .bike_maker {
+      max-height: 260px; } }
 
 .clear_text {
   margin: 3.5em 0 0 0;
@@ -232,7 +245,7 @@ a img {
   margin: 3.5em 0 0 0;
   background-color: rgba(235, 235, 235, 0.6);
   min-height: 300px;
-  width: 400px;
+  width: 100%;
   padding: 1em;
   box-shadow: 0 0 0.5em #939393; }
 
@@ -250,9 +263,31 @@ a img {
     box-shadow: 0 0 2em #939393; }
 
 /*SERVICES PAGE*/
-#services {
-  margin: 80px 0 0 0;
-  /*to account for fixed header*/ }
+.services_full {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fff;
+  min-height: 750px;
+  width: 100%;
+  margin: -50px 0 0 0;
+  /*to remove white space above background image*/
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.clear_text3 {
+  background-color: rgba(235, 235, 235, 0.6);
+  min-height: 300px;
+  width: 100%;
+  padding: 1em;
+  box-shadow: 0 0 0.5em #939393; }
 
 .bikes {
   padding: 3.5em 0; }
@@ -312,7 +347,7 @@ a img {
   position: relative; }
 
 .ch-item {
-  margin: auto auto;
+  margin: 2em auto 2em auto;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -320,13 +355,12 @@ a img {
   height: 100%;
   border-radius: 50%;
   position: relative;
-  cursor: default;
   box-shadow: inset 0 0 0 0 rgba(200, 95, 66, 0.4), inset 0 0 0 16px rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.1);
   -webkit-transition: all 0.4s ease-in-out;
           transition: all 0.4s ease-in-out; }
 
 .ch-info {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -369,35 +403,6 @@ a img {
           transform: scale(1); }
 
 /*END OF CIRCULAR IMAGES*/
-.circle {
-  width: 100%;
-  max-height: 500px;
-  max-width: 500px;
-  border-radius: 50%;
-  background-size: cover;
-  background-position: center;
-  margin: auto auto;
-  box-shadow: inset 0 0 0 0 rgba(200, 95, 66, 0.4), inset 0 0 0 16px rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.1);
-  -webkit-transition: all 0.4s ease-in-out;
-          transition: all 0.4s ease-in-out; }
-
-.circle h3 {
-  color: #fff;
-  position: relative;
-  letter-spacing: 2px;
-  margin: 0 30px;
-  padding: 1.5em 0 0 4em;
-  height: 110px; }
-
-.circle p {
-  color: #fff;
-  padding: auto auto;
-  font-style: italic;
-  margin: auto auto; }
-
-.circle:hover {
-  box-shadow: inset 0 0 0 80px rgba(200, 95, 66, 0.4), inset 0 0 0 16px rgba(255, 255, 255, 0.8), 0 1px 2px rgba(0, 0, 0, 0.1); }
-
 /*CONTACT FORM 7*/
 .wpcf7 input[type="text"],
 .wpcf7 input[type="email"],
@@ -419,7 +424,7 @@ a img {
   clear: both;
   bottom: 0;
   height: 80px;
-  background-color: #939393;
+  background-color: #ebebeb;
   width: 100%;
   text-align: center; }
   .site-footer ul {
@@ -2130,10 +2135,11 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: Lora, serif;
+  font-family: Merriweather, serif;
   font-size: 16px;
   font-size: 1.6rem;
-  line-height: 1.5; }
+  line-height: 1.5;
+  font-weight: 300; }
 
 h1, h2, h3, h4, h5, h6 {
   clear: both;
@@ -2151,7 +2157,8 @@ h3 {
 
 p {
   margin-bottom: 1.5em;
-  font-family: 'Lora', serif; }
+  font-family: 'Merriweather', serif;
+  font-weight: 300; }
 
 b, strong {
   font-weight: bold; }
@@ -2422,15 +2429,21 @@ a {
 @media screen and (max-width: 600px) {
   .menu-toggle,
   .main-navigation.toggled .nav-menu {
+    height: 80px;
     display: block;
-    width: 100%; }
+    width: 100%;
+    background: #fff; }
 
   .main-navigation ul {
+    margin: 80px 0 0 0;
     display: none;
     width: 100%; }
 
-  .main-navigatoin li {
-    width: 100%; } }
+  .main-navigation li {
+    background-color: #fff;
+    margin: 0;
+    width: 100%;
+    border: 1px solid black; } }
 .site-main .comment-navigation,
 .site-main .paging-navigation,
 .site-main .post-navigation {
