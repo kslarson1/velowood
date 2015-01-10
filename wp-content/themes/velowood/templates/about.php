@@ -24,7 +24,32 @@ get_header(); ?>
 			<div class="center">
 				<h3><?php the_field('about_history_header'); ?></h3>
 			</div>
-			<p><?php the_field('about_history_text'); ?></p>	
+			<p><?php the_field('about_history_text'); ?></p>
+
+		<!-- START OF HOURS REPEATER -->
+<?php
+
+// check if the repeater field has rows of data
+if( have_rows('about_hours') ):
+
+ 	// loop through the rows of data
+    while ( have_rows('about_hours') ) : the_row();
+
+        // display a sub field value
+        ; ?><p><b><?php the_sub_field('about_hours_days'); ?></b><?php
+        the_sub_field('about_hours_days_hours'); ?></p>
+        <?php 
+
+    endwhile;
+
+else :
+
+    // no rows found
+
+endif;
+
+?>
+		<!-- END OF HOURS REPEATER -->
 		</div>
 
 		<!-- START OF GOOGLE MAPS BACKGROUND -->

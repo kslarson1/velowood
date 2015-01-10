@@ -43,17 +43,15 @@ if ( ! class_exists( 'Yoast_GA_Admin' ) ) {
 			// Listener for reconnecting with google analytics
 			$this->google_analytics_listener();
 
-			if ( is_null( $this->get_tracking_code() ) ) {
+			if ( is_null( $this->get_tracking_code() ) && $this->show_admin_warning() ) {
 				add_action( 'admin_notices', array( $this, 'config_warning' ) );
 			}
 
-			$last_run = get_transient( 'yst_ga_last_wp_run' );
+			$last_run = get_option( 'yst_ga_last_wp_run' );
 			if ( $last_run === false || Yoast_GA_Utils::hours_between( strtotime( $last_run ), time() ) >= 48 ) {
 				// Show error, something went wrong
-				if ( ! is_null( $this->get_tracking_code() ) ) {
-					if ( ! isset( $_GET['page'] ) || ( isset( $_GET['page'] ) && $_GET['page'] !== 'yst_ga_settings' ) ) {
-						add_action( 'admin_notices', array( $this, 'warning_fetching_data' ) );
-					}
+				if ( ! is_null( $this->get_tracking_code() ) && empty( $this->options['manual_ua_code_field'] ) && $this->show_admin_dashboard_warning() ) {
+					add_action( 'admin_notices', array( $this, 'warning_fetching_data' ) );
 				}
 			}
 
@@ -93,7 +91,7 @@ if ( ! class_exists( 'Yoast_GA_Admin' ) ) {
 		 * Throw a warning when the fetching failed
 		 */
 		public function warning_fetching_data() {
-			echo '<div class="error"><p>' . sprintf( __( 'Failed to fetch the new data from Google Analytics. Please %sreauthenticate on the settings page%s!', 'google-analytics-for-wordpress' ), '<a href="' . admin_url( 'admin.php?page=yst_ga_settings' ) . '">', '</a>' ) . '</p></div>';
+			echo '<div class="error"><p>' . sprintf( __( 'Failed to fetch the new data from Google Analytics. You might need to %sreauthenticate%s.', 'google-analytics-for-wordpress' ), '<a href="' . admin_url( 'admin.php?page=yst_ga_settings' ) . '">', '</a>' ) . '</p></div>';
 		}
 
 		/**
@@ -138,7 +136,7 @@ if ( ! class_exists( 'Yoast_GA_Admin' ) ) {
 				// Fail, add a new notification
 				$this->add_notification( 'ga_notifications', array(
 					'type'        => 'error',
-					'description' => __( 'There where no changes to save, please try again.', 'google-analytics-for-wordpress' ),
+					'description' => __( 'There were no changes to save, please try again.', 'google-analytics-for-wordpress' ),
 				) );
 			}
 
@@ -162,6 +160,30 @@ if ( ! class_exists( 'Yoast_GA_Admin' ) ) {
 		}
 
 		/**
+		 * Are we allowed to show a warning message? returns true if it's allowed
+		 *
+		 * @return bool
+		 */
+		private function show_admin_warning() {
+			if ( current_user_can( 'manage_options' ) ) {
+				if ( ! isset( $_GET['page'] ) || ( isset( $_GET['page'] ) && $_GET['page'] !== 'yst_ga_settings' ) ) {
+					return true;
+				}
+			}
+
+			return false;
+		}
+
+		/**
+		 * Are we allowed to show a warning message? returns true if it's allowed ( this is meant to be only for dashboard )
+		 * 
+		 * @return bool
+		 */
+		private function show_admin_dashboard_warning() {
+			return ( current_user_can( 'manage_options' ) && isset( $_GET['page'] ) && $_GET['page'] === 'yst_ga_dashboard' );
+		}
+
+		/**
 		 * Transform the Profile ID into an helpful UA code
 		 *
 		 * @param $profile_id
@@ -172,10 +194,12 @@ if ( ! class_exists( 'Yoast_GA_Admin' ) ) {
 			$profiles = $this->get_profiles();
 			$ua_code  = null;
 
-			foreach ( $profiles as $profile ) {
-				foreach ( $profile['profiles'] as $subprofile ) {
-					if ( isset( $subprofile['id'] ) && $subprofile['id'] == $profile_id ) {
-						$ua_code = $subprofile['ua_code'];
+			foreach ( $profiles as $account ) {
+				foreach ( $account['items'] as $profile ) {
+					foreach ( $profile['items'] as $subprofile ) {
+						if ( isset( $subprofile['id'] ) && $subprofile['id'] === $profile_id ) {
+							return $subprofile['ua_code'];
+						}
 					}
 				}
 			}
@@ -241,8 +265,6 @@ if ( ! class_exists( 'Yoast_GA_Admin' ) ) {
 		 * Load the page of a menu item in the GA plugin
 		 */
 		public function load_page() {
-			global $yoast_ga_admin_ga_js;
-			$yoast_ga_admin_ga_js = new Yoast_GA_Admin_GA_JS;
 
 			$this->translate_promo();
 
@@ -270,6 +292,7 @@ if ( ! class_exists( 'Yoast_GA_Admin' ) ) {
 			}
 		}
 
+
 		/**
 		 * Get the Google Analytics profiles which are in this google account
 		 *
@@ -281,14 +304,13 @@ if ( ! class_exists( 'Yoast_GA_Admin' ) ) {
 			return $return;
 		}
 
-
 		/**
 		 * Checks if there is a callback or reauth to get token from Google Analytics api
 		 */
 		private function google_analytics_listener() {
 
 			if ( ! empty( $_POST['google_auth_code'] ) ) {
-				Yoast_Google_Analytics::get_instance()->authenticate( $_POST['google_auth_code'] );
+				Yoast_Google_Analytics::get_instance()->authenticate( trim( $_POST['google_auth_code'] ) );
 			}
 
 

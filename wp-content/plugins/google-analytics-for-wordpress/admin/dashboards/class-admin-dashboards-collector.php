@@ -141,7 +141,7 @@ if ( ! class_exists( 'Yoast_GA_Dashboards_Collector' ) ) {
 		 * @return datetime
 		 */
 		private function get_last_aggregate_run() {
-			return get_transient( 'yst_ga_last_wp_run' );
+			return get_option( 'yst_ga_last_wp_run' );
 		}
 
 		/**
@@ -262,6 +262,10 @@ if ( ! class_exists( 'Yoast_GA_Dashboards_Collector' ) ) {
 			$response = Yoast_Google_Analytics::get_instance()->do_request( 'https://www.googleapis.com/analytics/v3/data/ga?' . $params );
 
 			if ( isset( $response['response']['code'] ) && $response['response']['code'] == 200 ) {
+
+				// Success, set a transient which stores the latest runtime
+				update_option( 'yst_ga_last_wp_run', date( 'Y-m-d' ) );
+
 				$response = Yoast_Googleanalytics_Reporting::get_instance()->parse_response( $response, $storage_type, $start_date, $end_date );
 			} else {
 				return false;
@@ -393,13 +397,6 @@ if ( ! class_exists( 'Yoast_GA_Dashboards_Collector' ) ) {
 				// Overwrite the name if we have a defined one
 				if ( $storage_name != 'auto' ) {
 					$name = $storage_name;
-				}
-
-				/**
-				 * Success, set a transient which stores the latest runtime
-				 */
-				if ( ! empty( $response ) ) {
-					set_transient( 'yst_ga_last_wp_run', date( 'Y-m-d' ), 48 * HOUR_IN_SECONDS );
 				}
 
 				return Yoast_GA_Dashboards_Data::set( $name, $response, strtotime( $start_date ), strtotime( $end_date ), $store_as );

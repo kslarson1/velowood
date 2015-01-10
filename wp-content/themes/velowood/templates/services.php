@@ -170,10 +170,20 @@ get_header(); ?>
 	</div>
 	</div>
 	<!-- END OF COMP TUNE SECTION -->
-
 	</div>
 	</div>
 	<!-- END OF SERVICES EXPLAINED -->
+	<!-- BREAK -->	
+	<div class="page_break">
+	<div class="container-fluid">
+	<div class="col-xs-12 center">
+		<h3><?php the_field('services_charge'); ?></h3>
+	</div>
+	</div>
+	</div>
+	<br>
+	<br>
+	<br>
 	</div>
 	<!-- END OF SERVICES		 -->
 
