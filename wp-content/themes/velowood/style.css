@@ -153,13 +153,14 @@ a img {
 
 .ghost_button_semi {
   margin-top: .5em;
+  background-color: rgba(255, 255, 255, 0.3);
   margin-left: auto;
   margin-right: auto;
   display: block;
   font-size: 1.4em;
   width: 200px;
   padding: 8px;
-  color: #fff;
+  color: #000;
   border: 1px solid #f47515;
   border-radius: 1em;
   text-align: center;
@@ -173,7 +174,7 @@ a img {
   color: #E53721;
   background-color: #fff;
   /* fallback */
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.5);
   border-color: #fff;
   /* fallback */
   border-color: rgba(255, 255, 255, 0.4);
@@ -186,13 +187,13 @@ a img {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #fff;
-  min-height: 700px;
+  min-height: 850px;
   padding: 6em 0 0 0;
   margin: -47px;
   /*to remove white space above background image */ }
   .full-width img {
     max-width: 200px;
-    padding: 3em 0 0 0; }
+    padding: 2em 0 0 0; }
   .full-width h3 {
     color: #fff; }
   @media (max-width: 768px) {
@@ -214,7 +215,7 @@ a img {
   margin-top: 2em; }
 
 .clear_text4 {
-  margin: 10em 0 0 0;
+  margin: 6em 0 0 0;
   background-color: rgba(235, 235, 235, 0.4);
   border-radius: 2em;
   width: 100%;
@@ -247,7 +248,8 @@ a img {
   margin: 3.5em 0 0 0;
   background-color: rgba(235, 235, 235, 0.6);
   min-height: 300px;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   padding: 1em;
   box-shadow: 0 0 0.5em #939393; }
 
@@ -447,6 +449,7 @@ a img {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  min-height: 60px;
   height: 100%;
   width: 100%;
   max-width: 400px;
