@@ -102,23 +102,45 @@ get_header(); ?>
 			<div class="accessories" style="background: url(<?php the_field('accessories_background'); ?>)">
 			<div class="container">
 			<div class="row">
-				<div class="col-xs-12 col-sm-6 col-sm-offset-3">
+				<div class="col-xs-12 col-sm-8 col-sm-offset-2">
 				<div class="clear_text2">
 				<p><?php the_field('accessories_text'); ?></p>
-					<div class="row">
-						<div class="col-xs-6">
-						<ul>
-						<li>item 1</li>
-						</ul>
-						</div>
-						<div class="col-xs-6">
-						<ul>
-						<li>item 2</li>
-						</ul>
-						</div>
-					</div>
-				</div>
-				</div>
+					
+						<?php
+
+// check if the repeater field has rows of data
+if( have_rows('accessories_list') ):
+
+ 	// loop through the rows of data
+    while ( have_rows('accessories_list') ) : the_row(); ?>
+
+       <!--  // display a sub field value -->
+       <div class="row">
+		<div class="col-xs-6">
+			<ul>
+				<li><?php the_sub_field('accessories_list_item'); ?></li>
+	        </ul>
+        </div>
+        <div class="col-xs-6">
+		<ul>
+        <li><?php the_sub_field('accessories_list_item2'); ?></li>
+        </ul>
+        </div>
+		</div>
+        <?php
+
+    endwhile;
+
+else :
+
+    // no rows found
+
+endif;
+
+?>
+						
+			</div>
+			</div>
 			</div>
 			</div>
 			</div>

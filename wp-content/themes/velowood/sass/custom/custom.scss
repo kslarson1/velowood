@@ -57,7 +57,7 @@
 	padding: 6em 0 0 0;
 	margin: -47px;			/*to remove white space above background image */
 	img {
-		max-width: 200px;
+		width: 560px;
 		padding: 2em 0 0 0;
 		}
 	h3 {
@@ -129,7 +129,7 @@
 }
 
 .clear_text2 {
-	margin: 3.5em 0 0 0;
+	margin:6em 0 0 0;
 	background-color:rgba(235,235,235,0.6);
 	min-height: 300px;
 	width: 100%;
@@ -150,6 +150,9 @@
 			max-width: 100%;
 			box-shadow: 0 0 2em $color_standard_gray;
 		}
+	ul {
+		margin: .25em 1em 0 1em;
+		}	
 }
 
     /*SERVICES PAGE*/
@@ -163,7 +166,7 @@
 	margin: -50px 0 0 0;		/*to remove white space above background image*/
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: centr;
 }
 
 .clear_text3 {
