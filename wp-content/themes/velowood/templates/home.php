@@ -34,9 +34,9 @@ get_header(); ?>
 		<div class="row">
 			<div class="home_nav">
 			<div class="col-xs-12 center">
-				<a href="velowoodcyclery.com/products.com" class="ghost_button_semi">Products</a>
-				<a href="velowoodcyclery.com/services.com" class="ghost_button_semi">Services</a>
-				<a href="velowoodcyclery.com/about.com" class="ghost_button_semi">About</a>
+				<a href="/products" class="ghost_button_semi">Products</a>
+				<a href="/services" class="ghost_button_semi">Services</a>
+				<a href="/about" class="ghost_button_semi">About</a>
 			</div>
 		</div>
 	</div>
