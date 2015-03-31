@@ -1,0 +1,66 @@
+/*
+Error: Undefined variable: "$color_logo_darkorange".
+        on line 10 of /Applications/MAMP/htdocs/velowood/wp-content/themes/velowood/sass/custom/custom.scss
+
+5: 
+6: .page_break {
+7: 	height: 100px;
+8: 	width: 100%;
+9: 	background-color: #fff;
+10: 	border-top: 2px solid $color_logo_darkorange;
+11: 	border-bottom: 2px solid $color_logo_darkorange;
+12: 	font-size: 1.25em;
+13: 	display: flex;
+14: 	align-items: center;
+15: }
+
+Backtrace:
+/Applications/MAMP/htdocs/velowood/wp-content/themes/velowood/sass/custom/custom.scss:10
+/Users/KarlLarson/Downloads/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Users/KarlLarson/Downloads/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/script/tree/node.rb:50:in `perform'
+/Users/KarlLarson/Downloads/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/script/tree/list_literal.rb:62:in `block in _perform'
+/Users/KarlLarson/Downloads/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/script/tree/list_literal.rb:62:in `map'
+/Users/KarlLarson/Downloads/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/script/tree/list_literal.rb:62:in `_perform'
+/Users/KarlLarson/Downloads/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/script/tree/node.rb:50:in `perform'
+/Users/KarlLarson/Downloads/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:394:in `visit_prop'
+/Users/KarlLarson/Downloads/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/KarlLarson/Downloads/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/KarlLarson/Downloads/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `block in with_base'
+/Users/KarlLarson/Downloads/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/stack.rb:115:in `with_frame'
+/Users/KarlLarson/Downloads/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `with_base'
+/Users/KarlLarson/Downloads/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/KarlLarson/Downloads/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
+/Users/KarlLarson/Downloads/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:430:in `map'
+/Users/KarlLarson/Downloads/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
+/Users/KarlLarson/Downloads/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/KarlLarson/Downloads/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
+/Users/KarlLarson/Downloads/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/KarlLarson/Downloads/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/KarlLarson/Downloads/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `block in with_base'
+/Users/KarlLarson/Downloads/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/stack.rb:115:in `with_frame'
+/Users/KarlLarson/Downloads/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `with_base'
+/Users/KarlLarson/Downloads/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/KarlLarson/Downloads/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/KarlLarson/Downloads/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/KarlLarson/Downloads/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/KarlLarson/Downloads/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/KarlLarson/Downloads/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/KarlLarson/Downloads/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/KarlLarson/Downloads/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/KarlLarson/Downloads/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/KarlLarson/Downloads/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/KarlLarson/Downloads/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/KarlLarson/Downloads/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/KarlLarson/Downloads/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/KarlLarson/Downloads/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/root_node.rb:20:in `render'
+/Users/KarlLarson/Downloads/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/engine.rb:268:in `render'
+/Users/KarlLarson/Downloads/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/exec/sass_scss.rb:404:in `run'
+/Users/KarlLarson/Downloads/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/exec/sass_scss.rb:62:in `process_result'
+/Users/KarlLarson/Downloads/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/exec/base.rb:52:in `parse'
+/Users/KarlLarson/Downloads/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/exec/base.rb:19:in `parse!'
+/Users/KarlLarson/Downloads/CodeKit 2.app/Contents/Resources/engines/scss/bin/scss:13:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$color_logo_darkorange\".\A         on line 10 of /Applications/MAMP/htdocs/velowood/wp-content/themes/velowood/sass/custom/custom.scss\A \A 5: \A 6: .page_break {\A 7: 	height: 100px;\A 8: 	width: 100%;\A 9: 	background-color: #fff;\A 10: 	border-top: 2px solid $color_logo_darkorange;\A 11: 	border-bottom: 2px solid $color_logo_darkorange;\A 12: 	font-size: 1.25em;\A 13: 	display: flex;\A 14: 	align-items: center;\A 15: }"; }

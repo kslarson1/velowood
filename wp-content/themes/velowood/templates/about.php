@@ -82,7 +82,9 @@ endif;
 	 	// loop through the rows of data
 	    while ( have_rows('about_employees') ) : the_row(); ?>
 	      <!--   // display a sub field value -->
+	      	
 	     		<div class="col-xs-12 col-sm-6 col-md-4">
+	     		<div class="about_item">
 	     		<li>
 	     		<div class="ch-item" style="background-image: url(<?php the_sub_field('about_employee_image'); ?>)">
 		      	<div class="ch-info" >
@@ -92,8 +94,11 @@ endif;
 		      	</div>
 		      	</li>
 		      	<!-- END OF CIRCLE IMAGE -->
-		        <?php the_sub_field('about_employee_background'); ?>
+		      	<div class="about_item_container">
+		        	<p><?php the_sub_field('about_employee_background'); ?></p>
 		        </div>
+		        </div>
+		    </div>
 	       <?php 
 	    endwhile;
 	else :

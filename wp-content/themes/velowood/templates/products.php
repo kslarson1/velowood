@@ -47,13 +47,13 @@ get_header(); ?>
 				<p><?php the_field('products_bicycles_text_1'); ?></p>
 				</div>
 				<div class="col-xs-12 col-sm-8">
-				<img class="bike_maker" src="<?php the_field('products_bicycles_image_1'); ?>" >
+					<img class="img-responsive" style="margin: 2em auto" src="<?php the_field('products_bicycles_image_1'); ?>" >
 				</div>
 			</div>
 
 			<div class="row">
 				<div class="col-xs-12 col-sm-8">
-				<img class="bike_maker" src="<?php the_field('products_bicycles_image_2'); ?>" >
+					<img class="img-responsive" style="margin: 2em auto" src="<?php the_field('products_bicycles_image_2'); ?>" >
 				</div>
 				<div class="col-xs-12 col-sm-4">
 				<div class="center">
@@ -71,13 +71,13 @@ get_header(); ?>
 				<p><?php the_field('products_bicycles_text_3'); ?></p>
 				</div>
 				<div class="col-xs-12 col-sm-8">
-				<img class="bike_maker" src="<?php the_field('products_bicycles_image_3'); ?>" >
+					<img class="img-responsive" style="margin: 2em auto" src="<?php the_field('products_bicycles_image_3'); ?>" >
 				</div>
 			</div>
 
 			<div class="row">
 				<div class="col-xs-12 col-sm-8">
-				<img class="bike_maker" src="<?php the_field('products_bicycles_image_4'); ?>" >
+					<img class="img-responsive" style="margin: 2em auto" src="<?php the_field('products_bicycles_image_4'); ?>" >
 				</div>
 				<div class="col-xs-12 col-sm-4">
 				<div class="center">

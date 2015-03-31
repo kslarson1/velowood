@@ -20,7 +20,7 @@ $('.full-width h1').css({'margin-top': (vph / 1.75) * 0.2 + 'px'});
     cirW = $('.ch-grid li').width();
 
     $('.ch-grid li').css({'height': cirW + 'px'}); //  Setting height equal to width
-    // End of circle variable width
+  // End of circle variable width
 
 // bike_maker variable width
     cirW = $('.bike_maker').width();
